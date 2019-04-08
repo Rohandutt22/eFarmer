@@ -5,6 +5,10 @@
     <title></title>
   </head>
   <body>
-    <a href="Login_v1/index.html">click to go to website</a>
+    <form  method="post">
+      {{form.as_p}}
+      {%csrf_token%}
+      <input type="submit" name="submit" value="submit">
+    </form>
   </body>
 </html>

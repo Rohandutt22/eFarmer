@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% if obj %}
+    <ul>
+    {% for y in obj %}
+    <li>{{ y.productId }}</li>
+    <li>{{y.userId}}</li>
+    <li>{{y.nameOfProduct}}</li>
+    <li>{{y.typeOfSale}}</li>
+    {%endfor%}
+    </ul>
+    {% else %}
+    <h1>no data found </h1>
+    {%endif%}
+  </body>
+</html>
