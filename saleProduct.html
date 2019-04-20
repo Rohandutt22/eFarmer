@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>saleProduct</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="http://127.0.0.1:8000/eFarmer"><h2>eFarmer</h2></a>
+        </div>
+           <a href="#"><font color="grey"><h3>Home</h3></font></a>
+          <a href="#"><font color="grey"><h3>Page 1</h3></font></a>
+          <a href="#"><font color="grey"><h3>Page 2</h3></font></a>
+          <a href="#"><font color="grey"><h3>Page 3</h3></font></a>
+
+      </div>
+    </nav>
+    <form  method="post">
+    {{form.as_p}}
+    {%csrf_token%}
+    <input type="submit" name="save" value="save">
+    </form>
+
+  </body>
+</html>
